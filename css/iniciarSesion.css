@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+body {
+    font-family: "Playfair Display SC", serif;
+    
+}
+
+body {
+    background-image: url(/img/joven-acostada-a-punto-de-recibir-inyeccion-en-la-cara-medicina-estetica-768x481.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height:100vh;
+    width: 100%;
+}
+
+.login {
+    width: 500px;
+    background:#24303c;
+    padding: 30px;
+    margin:auto;
+    margin-top:100px;
+    border-radius: 5px;
+    font-family: "Playfair Display SC", serif;
+    color:#fff;
+    box-shadow: 7px 13px 37px #000;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.login h4 {
+    font-family: "Playfair Display SC", serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:#000;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border:1px solid #1f53c5;
+    font-family: "Playfair Display SC", serif;
+    font-size: 19px;
+    color: #fff;
+}
+
+.login p {
+    font-family: "Playfair Display SC", serif;
+    height: 40px;
+    text-align: center;
+    font-size: 19px; 
+    color:#000;
+    font-weight: bold;     
+}
+
+
+.login a {
+    font-family: "Playfair Display SC", serif;
+    color:#fff;
+    text-decoration: none; 
+    color:#000;
+    font-weight: bold; 
+}
+
+.login a:hover {
+    font-family: "Playfair Display SC", serif;
+    color:#fff;
+    text-decoration: underline; 
+    color:#507ddd;
+}
+
+.login .submit {
+    font-family: "Playfair Display SC", serif;
+    width: 100%;
+    background-color: #507ddd;
+    border:none;
+    margin: 0px 10px;
+    padding: 12px;
+    color:#fff;
+    font-size: 16px;
+    margin: 16px 0;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    
+}
+
+.login .submit:hover {
+    font-family: "Playfair Display SC", serif;
+    background:#1f53c5;
+    cursor: pointer;
+    
+}

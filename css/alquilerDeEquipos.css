@@ -1,0 +1,278 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+body {
+    min-height:100vh;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal; 
+    background-color: #fefae0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container_nav_alquiler {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo_pagina {
+    width: 100;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.title {
+    color:#8338ec;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.active {
+    color:#000000;
+}
+
+
+nav {
+    width: 300px;
+    background-color: #fefae0;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+nav a {
+    font-family: "Playfair Display SC", serif;
+    color: #8338ec;
+    padding: 7px;
+    margin-top: 15px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #8338ec;
+    color:#000000;
+}
+
+.container-cards h2 {
+    font-family: "Playfair Display SC", serif;
+    font-size:45px;
+    color:#8338ec;
+    margin-bottom: 30px;
+
+}
+
+p {
+    font-family: "Playfair Display SC", serif;
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+
+.container_equipos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.title_content {
+    font-family: "Playfair Display SC", serif;
+    color:#8338ec;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.container_equipos p  {
+    font-family: "Playfair Display SC", serif;
+    color:#8338ec;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0  5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    font-family: "Playfair Display SC", serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:45px;
+    line-height: 45px;
+    color:#ffff;
+    background: rgb(0, 0, 0, .4);
+    text-align: center; 
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background:#8338ec;
+    padding: 15px;
+    color:#ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0  5px 10px #000;
+}
+
+.card .back .link {
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.card .back .link a{
+    font-family: "Playfair Display SC", serif;
+    color:#f3f3f3;
+}
+
+.card .back  h3 {
+    font-family: "Playfair Display SC", serif;
+    font-size:20px;
+    margin-top: 20px;
+    letter-spacing:2px;
+
+}
+
+.card .back p {
+    font-family: "Playfair Display SC", serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+    cursor: pointer;
+    transition:0.3s ease-in-out
+}
+
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+    cursor: pointer;
+    transition:0.3s ease-in-out
+
+}
+
+span {
+    color:gold;
+}
+
+.container-cards .btn-enviar {
+    font-family: "Playfair Display SC", serif;
+    width: 150px;
+    padding:10px;
+    font-size: 15px;
+    border: solid 1px #fefae0;
+    border-radius:2px;
+    outline: 0px;
+    background: #fefae0;
+    color:#414344;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-cards .btn-enviar:hover {
+    font-family: "Playfair Display SC", serif;
+    background:#bb95f0;
+    color:#000000;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #292727;
+    color: #edf2f4;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 35px;
+}
+
+footer .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+footer .container .social-media,
+footer .container .links,
+footer .container .contact-info {
+    margin-bottom: 20px;
+}
+
+footer a {
+    font-family: "Playfair Display SC", serif;
+    color: #edf2f4;
+    margin: 0 10px;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #8338ec;
+
+}
+
+footer p {
+    font-family: "Playfair Display SC", serif;
+    margin: 10px 0;
+    color: #edf2f4;
+}
